@@ -31,7 +31,7 @@ section {
   flex-wrap: wrap
 }
 
-img {
+.img-flex {
   display: block;
   width: 100%;
 }
@@ -74,6 +74,43 @@ h2, p {
   .section-icon {
     width: 25%;
     text-align: center;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: nowrap;
+  }
+
+  .img-flex {
+    width: 100%;
+  }
+
+  .section-letter {
+    order: -1;
+  }
+
+  .section-body {
+    width: 100%;
+    order: -1;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+  font-size: 120%;
+  line-height: 1.5;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
   }
 
 
