@@ -22,13 +22,17 @@ body {
 }
 
 section {
-    background-color: #e5c30a;
-    padding: 1.3rem;
+  background-color: #e5c30a;
+  padding: 0;
+  padding: 1.3rem 1.3rem 0;
 }
 
 .wrapper {
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  margin: 0 0 1.4rem;
+  padding: 0;
+  max-width: 45em;
 }
 
 .img-flex {
@@ -44,6 +48,7 @@ section {
 
 .section-body {
   margin: 0;
+  margin-bottom: 1.4rem;
 }
 
 h2, p {
@@ -66,25 +71,30 @@ h2, p {
 @media only screen and (min-width: 38em) {
 
   html {
-  font-size: 110%;
-  line-height: 1.4;
+    font-size: 110%;
+    line-height: 1.4;
   }
 
   .section-letter,
   .section-icon {
-    width: 25%;
+    width: 33.3333%;
     text-align: center;
+    padding: 0;
   }
 
   .wrapper {
+    margin: 0;
     display: flex;
     flex-direction: row;
     align-items: stretch;
     flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 100%;
   }
 
   .img-flex {
     width: 100%;
+    padding: 1rem;
   }
 
   .section-letter {
@@ -92,8 +102,11 @@ h2, p {
   }
 
   .section-body {
+    margin: 0;
     width: 100%;
     order: -1;
+    padding: 1.3rem;
+    padding-top: 0;
   }
 
 }
@@ -101,8 +114,22 @@ h2, p {
 @media only screen and (min-width: 60em) {
 
   html {
-  font-size: 120%;
-  line-height: 1.5;
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  section {
+    padding: 0;
+  }
+
+  .wrapper {
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .section-body {
+    padding: 1.3rem;
   }
 
 }
@@ -113,5 +140,20 @@ h2, p {
     font-size: 130%;
   }
 
+  section {
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+
+  }
+
+  .wrapper {
+    margin: auto;
+    padding: 0;
+    justify-content: space-around;
+    max-width: 45em;
+
+
+  }
 
 }
