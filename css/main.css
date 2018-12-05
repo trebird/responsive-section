@@ -51,6 +51,14 @@ section {
   margin-bottom: 1.4rem;
 }
 
+section h2 {
+  font-weight: bold;
+}
+
+section p {
+  font-style: normal;
+}
+
 h2, p {
   margin: 0;
 }
@@ -124,10 +132,18 @@ h2, p {
   .wrapper {
     justify-content: space-between;
     align-items: stretch;
-    padding: 1rem;
+    padding: 0 1.3rem;
   }
 
   .section-body {
+    padding: 1.3rem;
+  }
+
+  section h2 {
+    padding-top: 1rem;
+  }
+
+  .img-flex {
     padding: 1.3rem;
   }
 
