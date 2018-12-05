@@ -79,7 +79,7 @@ h2, p {
   .section-icon {
     width: 33.3333%;
     text-align: center;
-    padding: 0;
+    padding: 1rem;
   }
 
   .wrapper {
@@ -94,7 +94,6 @@ h2, p {
 
   .img-flex {
     width: 100%;
-    padding: 1rem;
   }
 
   .section-letter {
@@ -125,7 +124,7 @@ h2, p {
   .wrapper {
     justify-content: space-between;
     align-items: stretch;
-    padding: 0;
+    padding: 1rem;
   }
 
   .section-body {
@@ -143,7 +142,6 @@ h2, p {
   section {
     align-items: center;
     justify-content: space-around;
-    padding: 1rem;
 
   }
 
@@ -152,8 +150,12 @@ h2, p {
     padding: 0;
     justify-content: space-around;
     max-width: 45em;
+  }
 
-
+  .section-body,
+  .section-letter,
+  .section-icon {
+    padding: 1.3rem;
   }
 
 }
